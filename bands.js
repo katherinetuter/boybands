@@ -7,11 +7,11 @@ var currentVeggie = 0;
 
 //start loop 
 for (var loopTracker = 0; loopTracker < loopCount; loopTracker += 1) {
+	var bandVeggies = bands[loopTracker] + " " +vegetables[loopTracker];
+	console.log(bandVeggies);
 	var bandElement = document.getElementById("boy-bands");
-	console.log(currentBand);
-	bandElement.innerHTML = "<p>" + bands[loopTracker] + "</p>";
+	bandElement.innerHTML += "<p>" + bands[loopTracker] + "</p>";
 	var veggieElement = document.getElementById("vegetables");
-	veggieElement.innerHTML = "<p>" + vegetables[loopTracker] + "</p>";
-
+	veggieElement.innerHTML += "<p>" + vegetables[loopTracker] + "</p>";
 }
 
